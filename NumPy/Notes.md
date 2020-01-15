@@ -9,6 +9,8 @@ my_tuple = (14 ,4.56, 5+7j)
 print( np.array(my_tuple))
 
 [14.  +0.j  4.56+0.j  5.  +7.j]
+my_array = np.array(my_tuple)
+my_array[-2] : 4.56+0.j
 
 ### Difference between python and numpy data structure. Below is the example of OOPS in python and numpy. 
 
@@ -31,6 +33,8 @@ Vectorization describes the absence of any explicit looping, indexing, etc., in 
 ## NumPy Arange function
 It creates evently spaced values within the given interval. (start, stop]. Stop value is compulsory 
 np.arange(5,10) : [5 6 7 8 9]
+my_vector = np.arange(35)
+my_vector.size(7,5) : converts array to a 7 * 5 matrix
 np.arange(5,0): []// Does not work in reverse order
 np. arange(5,50,5) : [ 5 10 15 20 25 30 35 40 45]
 np.arange(50, step = 5) : [ 0  5 10 15 20 25 30 35 40 45]
