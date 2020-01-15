@@ -34,3 +34,18 @@ np.arange(5,10) : [5 6 7 8 9]
 np.arange(5,0): []// Does not work in reverse order
 np. arange(5,50,5) : [ 5 10 15 20 25 30 35 40 45]
 np.arange(50, step = 5) : [ 0  5 10 15 20 25 30 35 40 45]
+
+## Numpy Linspace,
+
+Unline Arange function the linspace function includes the stop value while reacting interval. The default return type of zero() and one() is float type value. 
+
+print(np.zeros(5))
+print(np.ones((4,5)))
+print(np.linspace(5,90,3))
+
+[0. 0. 0. 0. 0.]
+[[1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1.]]
+[ 5.  47.5 90. ]
