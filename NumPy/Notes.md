@@ -27,3 +27,10 @@ Vectorization describes the absence of any explicit looping, indexing, etc., in 
 1. vectorized code is more concise and easier to read
 2. fewer lines of code generally means fewer bugs the code more closely resembles standard mathematical notation (making it easier, typically, to correctly code mathematical constructs)
 3. vectorization results in more “Pythonic” code. Without vectorization, our code would be littered with inefficient and difficult to read for loops.
+
+## NumPy Arange function
+It creates evently spaced values within the given interval. (start, stop]. Stop value is compulsory 
+np.arange(5,10) : [5 6 7 8 9]
+np.arange(5,0): []// Does not work in reverse order
+np. arange(5,50,5) : [ 5 10 15 20 25 30 35 40 45]
+np.arange(50, step = 5) : [ 0  5 10 15 20 25 30 35 40 45]
