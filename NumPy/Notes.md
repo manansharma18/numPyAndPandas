@@ -53,3 +53,24 @@ print(np.linspace(5,90,3))
  [1. 1. 1. 1. 1.]
  [1. 1. 1. 1. 1.]]
 [ 5.  47.5 90. ]
+
+* BroadCasting.py *
+The term broadcasting describes how numpy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes.
+
+ndim :  my_vector.for dimensions
+shape : my_vector.shape
+size :  my_vector.size
+dtype : my_vector.dtype
+np.inner(matrix1, matrix2): inner product of 2 matrices. But, both should be 1 D matrix
+np.dot(matrix1, matrix2): multiply any sized matrix
+
+leftMatrix = np.arange(6).reshape(2,3)
+rightMatrix = np.arange(15).reshape(3,5)
+
+newMatrix = np.dot(leftMatrix,rightMatrix)
+
+print(newMatrix)
+[[ 25  28  31  34  37]
+ [ 70  82  94 106 118]]
+
+ numPy .sum() function returns float. Usual python operations return interger
