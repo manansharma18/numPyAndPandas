@@ -54,8 +54,8 @@ print(np.linspace(5,90,3))
  [1. 1. 1. 1. 1.]]
 [ 5.  47.5 90. ]
 
-* BroadCasting.py *
-The term broadcasting describes how numpy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes.
+## BroadCasting.py 
+The term broadcasting describes how numpy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes. 
 
 ndim :  my_vector.for dimensions
 shape : my_vector.shape
@@ -74,3 +74,9 @@ print(newMatrix)
  [ 70  82  94 106 118]]
 
  numPy .sum() function returns float. Usual python operations return interger
+
+ ## Array
+
+ Same memory space is allocated to each element. Array[0:] : will show information from the first element to the last element. 
+
+ Record array make accessible attributes of an array like Object Oriented Programing.
