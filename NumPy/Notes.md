@@ -83,4 +83,37 @@ print(newMatrix)
 
  ## matplot library
 
-Is a python 2D plotting library for publicasion quality plots. Numbering starts form 1 and not 0
+Is a python 2D plotting library for publicasion quality plots. Numbering starts form 1 and not 0. Explode function in pie chart tells that that piece will be separated from the pie chart. 
+
+this means that 2 second piece will be detached from the pie chart
+explode = (0,0.1,0)
+
+## Copy and views
+
+Copy copies data from one location and creates another another reference for the new variable. Views create a new variable but with the same reference to the original variable. 
+
+tree_house = np.array([5,10,32,-9])
+dog_house = np.copy(tree_house)
+dog_house[0] = 4
+// Memory space
+dog_house is tree_house : false
+dog_house == tree_house : [False, true,true,true]
+
+
+mi_casa =  np.array([5,10,32,-9])
+su_casa - mi_casa
+
+mi_casa is su_casa : true
+id(mi_casa) == id(su_casa) : true
+mi_casa == su_casa :[True, true,true,true]
+
+mi_casa[2] = 30 : this will change the valie in su_casa as well because they have same reference
+
+## Atributes of array
+a = np.array(np.arange(24)).reshape(2,3,4)
+ndim: 3
+shape: (2,3,4)
+size: Size of the array
+dtype: int32
+itemsize : 4 bytes in 32 bit integer
+type(a): numpy.ndarray
