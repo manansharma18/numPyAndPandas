@@ -132,3 +132,10 @@ np.delete(c,1,axis = 0) // Deletes 1 matrix
 np.delete(c,1,axis = 1) // Deletes 2nd row as the index is 1
 np.delete(c,1,axis = 2) // Deletes 2nd column  as the index is 1
 
+reshape function creates a view of the data and not a copy of data.
+ravel() converts a n dim array to 1 dim array
+flat return iterator. can be used in loop
+fliplr: lrft right
+flipud : up down flip
+np.roll(array,5): moves last 5 element to first place
+np.roll(array,-5): moves first 5 element to last place
