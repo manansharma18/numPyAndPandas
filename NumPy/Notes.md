@@ -117,3 +117,18 @@ size: Size of the array
 dtype: int32
 itemsize : 4 bytes in 32 bit integer
 type(a): numpy.ndarray
+append: b= np.append(a,[5,6,7,8]) // b is 1D array with 28 elements
+
+c = np.array(np.arange(24)).reshape(2,3,4) *10 +3
+
+np.append(a,c,axis =0) //  appends c at the end of a. New array is (4,3,4) 
+axis = 1 is (2,6,4) array
+axis = 2 is (2,3,8) array
+
+np.hstack(a,c)// this eliminates the axis parameter and creates copies and not views.
+
+numpy's insert and delete create a new array with new data. 
+np.delete(c,1,axis = 0) // Deletes 1 matrix
+np.delete(c,1,axis = 1) // Deletes 2nd row as the index is 1
+np.delete(c,1,axis = 2) // Deletes 2nd column  as the index is 1
+
