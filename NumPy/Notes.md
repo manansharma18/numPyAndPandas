@@ -80,3 +80,7 @@ print(newMatrix)
  Same memory space is allocated to each element. Array[0:] : will show information from the first element to the last element. 
 
  Record array make accessible attributes of an array like Object Oriented Programing.
+
+ ## matplot library
+
+Is a python 2D plotting library for publicasion quality plots. Numbering starts form 1 and not 0
