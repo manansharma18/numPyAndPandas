@@ -11,7 +11,7 @@ print( np.array(my_tuple))
 [14.  +0.j  4.56+0.j  5.  +7.j]
 my_array = np.array(my_tuple)
 my_array[-2] : 4.56+0.j
-
+my_array[::2] (start:stop:step )// every second element
 ### Difference between python and numpy data structure. Below is the example of OOPS in python and numpy. 
 
 my_tuple * 6 in python will replicate the entire array 6 times. 
@@ -146,3 +146,7 @@ Vectorized wrapper for a python function which has a fixed number of scalar inpu
 def truncated_binomial (x):
     return (x+1)**3 - (x)**3 
 np.matrix function return value in matrix style. it accepts array like value.
+
+## SymPy library
+
+diff(): for differentiation
