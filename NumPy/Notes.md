@@ -92,6 +92,8 @@ explode = (0,0.1,0)
 
 Copy copies data from one location and creates another another reference for the new variable. Views create a new variable but with the same reference to the original variable. 
 
+NumPy slicing creates a view instead of a copy as in the case of builtin Python sequences such as string, tuple and list. Care must be taken when extracting a small portion from a large array which becomes useless after the extraction, because the small portion extracted contains a reference to the large original array whose memory will not be released until all arrays derived from it are garbage-collected. In such cases an explicit copy() is recommended.
+
 tree_house = np.array([5,10,32,-9])
 dog_house = np.copy(tree_house)
 dog_house[0] = 4
@@ -101,7 +103,7 @@ dog_house == tree_house : [False, true,true,true]
 
 
 mi_casa =  np.array([5,10,32,-9])
-su_casa - mi_casa
+su_casa = mi_casa
 
 mi_casa is su_casa : true
 id(mi_casa) == id(su_casa) : true
@@ -150,3 +152,14 @@ np.matrix function return value in matrix style. it accepts array like value.
 ## SymPy library
 
 diff(): for differentiation
+
+numpy.random.random is actually an alias for numpy.random.random_sample. I'll use the latter in the following. (See this question and answer for more aliases.)
+
+Both functions generate samples from the uniform distribution on [0, 1). The only difference is in how the arguments are handled. With numpy.random.rand, the length of each dimension of the output array is a separate argument. With numpy.random.random_sample, the shape argument is a single tuple.
+
+For example, to create an array of samples with shape (3, 5), you can write
+
+sample = np.random.rand(3, 5)
+or
+
+sample = np.random.random_sample((3, 5))
