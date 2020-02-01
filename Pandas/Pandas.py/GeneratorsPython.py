@@ -10,5 +10,7 @@ try:
     x = 5/0
 except ZeroDivisionError:
     print('Cannot divide by zero')
+except Exception as e:
+    print("Message is ", format(e))
 finally:
     print("lolz")
