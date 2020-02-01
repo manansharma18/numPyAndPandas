@@ -55,7 +55,7 @@ print(np.linspace(5,90,3))
 [ 5.  47.5 90. ]
 
 ## BroadCasting.py 
-The term broadcasting describes how numpy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes. 
+The term broadcasting describes how numpy treats arrays with different shapes during arithmetic operations. Subject to certain constraints, the smaller array is “broadcast” across the larger array so that they have compatible shapes. The size of both arrays must be same. But we can add an array of integers with an array of floats. Provided both have same number of elements in the array.
 
 ndim :  my_vector.for dimensions
 shape : my_vector.shape
