@@ -8,3 +8,5 @@ print(np.sort(a))
 print (a)
 print(a.sort())
 print(a)
+
+np.array(np.arange(20).reshape(4,5))
