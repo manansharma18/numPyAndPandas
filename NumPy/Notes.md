@@ -145,6 +145,22 @@ flipud : up down flip
 np.roll(array,5): moves last 5 element to first place
 np.roll(array,-5): moves first 5 element to last place
 
+We can also sort ndarrays in NumPy. We will learn how to use the np.sort() function to sort rank 1 and rank 2 ndarrays in different ways. Like with other functions we saw before, the sort function can also be used as a method. However, there is a big difference on how the data is stored in memory in this case. When np.sort() is used as a function, it sorts the ndrrays out of place, meaning, that it doesn't change the original ndarray being sorted. However, when you use sort as a method, ndarray.sort() sorts the ndarray in place, meaning, that the original array will be changed to the sorted one. 
+
+a = np.array([5,6,5,6,4,3,2,8,9])
+
+print(a)
+// does not change the array a
+print(np.sort(a))
+print (a)
+print(a.sort())
+print(a)
+// Output 
+[5 6 5 6 4 3 2 8 9]
+[2 3 4 5 5 6 6 8 9]
+[5 6 5 6 4 3 2 8 9]
+None
+[2 3 4 5 5 6 6 8 9]
 ## Universal function
 
 Vectorized wrapper for a python function which has a fixed number of scalar inputs and scalar outputs. 
