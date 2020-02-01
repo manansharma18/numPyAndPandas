@@ -120,7 +120,10 @@ dtype: int32
 itemsize : 4 bytes in 32 bit integer
 type(a): numpy.ndarray
 append: b= np.append(a,[5,6,7,8]) // b is 1D array with 28 elements
-
+diag : Selects value along the diagonal of the array
+np.diag(a, k=1) //selects the diagonal above the main diagonal.
+np.diag(x , k=-1) //selects diagonal below the main diagonal. by default k = 0 thats why it selects the main diagonal
+unique: selects unique value from the array
 c = np.array(np.arange(24)).reshape(2,3,4) *10 +3
 
 np.append(a,c,axis =0) //  appends c at the end of a. New array is (4,3,4) 
