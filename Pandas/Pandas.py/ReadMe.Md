@@ -11,4 +11,4 @@ print(dataFrame.loc['2020-02-03',['B','D']][1])
 # describe function describes the function. There is a option to pass the precision. CumSum sums every value of the matrix. 
 # append creates a new matrix. To read a excel file pd.read_excel and to write to a csv use .to_csv
 # group by function is same as sql. ,groupBy('Department')
-    
+The difference between serie and nd array is that series automatically aligns data based on labels. thus you can write computation without thinking about the labels. 
