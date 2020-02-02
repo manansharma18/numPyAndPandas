@@ -14,3 +14,5 @@ print(dataFrame.loc['2020-02-03',['B','D']][1])
 The difference between serie and nd array is that series automatically aligns data based on labels. thus you can write computation without thinking about the labels. 
 
 Value in dataframe is derived from the value in the dictonary and the indexes are the keys of the dictonary. There can be list in dictonary and dictonary in list
+
+if you use dataframe.T then transposed dataframe is returned and if you use np.transpose(dataframe) then ndarray is returned. 
