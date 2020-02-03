@@ -22,3 +22,6 @@ dataframs.fillna({0 : 1 , 5 : 1.2 }) : Fills NaN in 0 row with 1 and in row 5 wi
 dataframe.fillna(method = 'ffill') fills NaN with the previous value in the column. 
 print(dataFrame.dropna()) // drops rows with NaN
 print(dataFrame.dropna(axis = 1)) // drops columns with NaN
+dataFrame.duplicated() // returns true if the rows are duplicate
+dataFrame.drop_duplicated(['column 1'])// drop the duplicate values in column 1
+dataFrame.drop_duplicated()//drop the duplicate rows
