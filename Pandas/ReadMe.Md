@@ -25,3 +25,4 @@ print(dataFrame.dropna(axis = 1)) // drops columns with NaN
 dataFrame.duplicated() // returns true if the rows are duplicate
 dataFrame.drop_duplicated(['column 1'])// drop the duplicate values in column 1
 dataFrame.drop_duplicated()//drop the duplicate rows
+.read_csv() : Will read the csv file
