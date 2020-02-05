@@ -26,3 +26,9 @@ dataFrame.duplicated() // returns true if the rows are duplicate
 dataFrame.drop_duplicated(['column 1'])// drop the duplicate values in column 1
 dataFrame.drop_duplicated()//drop the duplicate rows
 .read_csv() : Will read the csv file
+
+Graphs can be added in two ways 
+Object oriented and functional method
+
+In object oriented ploting you generate an empty plot and then poplulate it with figures, labels and values. 
+%matplotlib inline will plot graphs inline. 
