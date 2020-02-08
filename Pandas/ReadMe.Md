@@ -32,3 +32,12 @@ Object oriented and functional method
 
 In object oriented ploting you generate an empty plot and then poplulate it with figures, labels and values. 
 %matplotlib inline will plot graphs inline. 
+
+Statistics methods
+
+.sum()// prints summary along the column
+.sum(axis =1)// prints summary along the row
+.std()// for standard deviation
+.var()// variance
+.value_counts()// counts unique value
+.describe()// all of descriptive statistics
