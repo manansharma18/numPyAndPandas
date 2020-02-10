@@ -37,3 +37,5 @@ if response.status_code == 200 :
         if(len(cheapestList) >= 5 ):
             break
     print(cheapestList)
+else:
+    print('There is a problem with the Url or with the website.' + response.status_code)
