@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get('https://gateflipp.flippback.com/bf/flipp/items/search?locale=en-ca&postal_code=N2L6P2&sid=&q=tomato')
+response = requests.get('https://gateflipp.flippback.com/bf/flipp/items/search?locale=en-ca&postal_code=N2L6P2&sid=&q=onion')
 
 
 if response.status_code == 200 :
